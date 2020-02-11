@@ -1,0 +1,70 @@
+
+body {
+  background: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+
+}
+
+a {
+  font-weight: bold;
+  color: #9217FF;
+}
+
+#container {
+  background: black;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  height: 99vh;
+}
+
+.box {
+  width: 75%;
+  margin: 5px;
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+
+p, li {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+	font-family: 'Barlow Condensed', sans-serif;
+	color: white;
+}
+
+/* img:hover ~ .img_caption{
+	display: block;
+} */
+
+img:hover ~ .img_caption{
+	display: block;
+}
+
+.img_caption{
+	display: none;
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
